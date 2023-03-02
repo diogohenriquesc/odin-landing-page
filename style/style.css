@@ -190,3 +190,59 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
+.cta {
+  padding-block: 5rem;
+  color: white;
+}
+
+.cta__container {
+  background-color: crimson;
+  padding: 2rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cta__title {
+  font-size: 1.6rem;
+  margin-bottom: .4rem;
+}
+
+.cta__description {
+  opacity: .9;
+}
+
+.cta__button {
+  all: unset;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 1rem 3rem .8rem;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.cta__button:hover {
+  color: crimson;
+}
+
+.cta__button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: white;
+  transition: all 200ms ease-in-out;
+  z-index: -1;
+}
+
+.cta__button:hover::after {
+  width: 100%;
+}
