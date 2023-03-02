@@ -173,7 +173,6 @@ body {
 }
 
 .quote {
-  background-color: lightgray;
   padding-block: 7rem;
   text-align: center;
   font-size: 2.25rem;
@@ -245,4 +244,11 @@ body {
 
 .cta__button:hover::after {
   width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 2.5rem;
+  background-color: #121212;
+  color: white;
 }
