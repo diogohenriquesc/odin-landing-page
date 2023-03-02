@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Quicksand:wght@400;700&display=swap');
 
 *, *::before, *::after {
   padding: 0;
@@ -76,7 +76,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
 }
 
 .intro__title {
@@ -127,7 +127,6 @@ body {
 }
 
 .cards {
-  margin-bottom: 5rem;
   padding-top: 4rem;
   padding-bottom: 10rem;
   background-color: #121212;
@@ -173,3 +172,21 @@ body {
   background-color: crimson;
 }
 
+.quote {
+  background-color: lightgray;
+  padding-block: 7rem;
+  text-align: center;
+  font-size: 2.25rem;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.quote__author {
+  text-align: right;
+  font-size: 1.6rem;
+  padding-right: 10rem;
+  padding-top: 1rem;
+  font-weight: 700;
+  font-style: normal;
+}
