@@ -31,6 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 5rem;
 }
 
 .header__logo {
@@ -63,4 +64,61 @@ body {
 
 .header__nav-item a:hover::after {
   width: 100%;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.intro__title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-bottom: 1.3rem;
+}
+
+.intro__description {
+  opacity: .9;
+  margin-bottom: 1.3rem;
+}
+
+.intro__button {
+  all: unset;
+  border: 2px solid black;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: .8rem 1.7rem .6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 200ms ease-in-out;
+}
+
+.intro__button:hover {
+  color: white;
+}
+
+.intro__button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: black;
+  transition: all 200ms ease-in-out;
+  z-index: -1;
+}
+
+.intro__button:hover::before {
+  width: 100%;
+}
+
+.intro > div {
+  flex: 1;
 }
